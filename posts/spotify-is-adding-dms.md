@@ -1,7 +1,6 @@
 ---
 title: "Spotify is adding DMs"
 date: 2025-08-26
-layout: post
 ---
 
 [Spotify is adding DMs](https://www.theverge.com/news/765771/spotify-messages-dms-audio-sharing-feature).

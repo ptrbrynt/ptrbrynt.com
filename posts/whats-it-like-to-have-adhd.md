@@ -4,7 +4,6 @@ date: 2025-01-23
 slug: posts/whats-it-like-to-have-adhd
 tags:
   - "ADHD"
-layout: post
 ---
 
 I recently started reading a book called [_The ADHD Advantage_](https://www.goodreads.com/book/show/203093731-the-adhd-advantage)&nbsp;by Dr Anders Hansen. I’ve not finished it yet, but the first chapter does include an extremely helpful description of what ADHD is like.

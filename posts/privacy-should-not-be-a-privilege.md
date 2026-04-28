@@ -1,7 +1,6 @@
 ---
 title: "Privacy should not be a privilege"
 date: 2026-04-25
-layout: post
 ---
 
 Loved reading [this post](https://blog.avas.space/privacy-stuff/) by Ava. It sums up really well how I feel about “privacy-focused” alternatives to popular software and services. It’s great that these alternatives exist, but we can’t think of them as a solution to the privacy problem.

@@ -1,7 +1,6 @@
 ---
 title: "Grieving the career I never had"
 date: 2025-11-25
-layout: post
 ---
 
 A big part of me always wanted to be a teacher.

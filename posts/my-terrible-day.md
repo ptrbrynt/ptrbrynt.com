@@ -1,7 +1,6 @@
 ---
 title: "My terrible day"
 date: 2025-10-21
-layout: post
 ---
 
 My terrible day started yesterday.

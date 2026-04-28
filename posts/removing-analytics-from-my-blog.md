@@ -1,7 +1,6 @@
 ---
 title: "Removing analytics from my blog"
 date: 2025-10-23
-layout: post
 ---
 
 I’ve had some lightweight analytics installed on my blog for the past few months. Not because I’m interested in optimising or growing (this is a hobby, not a business), but just because it kinda makes me feel good to know that people are reading my posts.

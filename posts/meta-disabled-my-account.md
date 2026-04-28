@@ -1,7 +1,6 @@
 ---
 title: "Meta disabled my account"
 date: 2026-02-12
-layout: post
 ---
 
 Weird day. I’ve been in London for work, and I’ve just checked my emails for the first time today.

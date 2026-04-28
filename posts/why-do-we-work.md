@@ -6,7 +6,6 @@ tags:
   - "Books"
   - "I Finished A Book"
   - "Work"
-layout: post
 ---
 
 _This post is part of a series called_ [I Finished A Book](https://ptrbrynt.com/tag/I-Finished-A-Book)_, in which I write about a book I’ve read recently. I don’t finish every book I start, so if I do manage to get to the end, that means I must have really liked it._

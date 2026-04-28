@@ -4,7 +4,6 @@ date: 2025-01-26
 slug: posts/ive-been-making-espresso-wrong-for-5-years
 tags:
   - "Coffee"
-layout: post
 ---
 
 Herein lies a very nerdy coffee-related confession.

@@ -5,7 +5,6 @@ slug: posts/flutter-needs-to-break-free-from-material
 tags:
   - "Flutter"
   - "Software Engineering"
-layout: post
 ---
 
 I've been lucky to work on a large number of Flutter apps from scratch. Each time, we have done what we believed to be the right thing: started with a `MaterialApp` and tweaked it to suit the style of our app.

@@ -4,7 +4,6 @@ date: 2024-07-29
 slug: posts/how-i-manage-my-adhd
 tags:
   - "ADHD"
-layout: post
 ---
 
 I have undiagnosed ADHD. Without going into specifics, this means I have a lot of challenges around attention, memory, motivation, and executive function. I procrastinate a lot, struggle to focus on certain kinds of tasks, and forget about stuff.

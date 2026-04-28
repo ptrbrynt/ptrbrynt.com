@@ -4,7 +4,6 @@ date: 2023-11-14
 slug: posts/in-the-real-world-refactoring-is-a-software-engineers-secret-weapon
 tags:
   - "Software Engineering"
-layout: post
 ---
 
 > Refactoring is a systematic process of improving code without creating new functionality that can transform mess into clean code and simple design.

@@ -1,7 +1,6 @@
 ---
 title: "Let’s all raise a glass to the 11-inch MacBook Air"
 date: 2025-09-02
-layout: post
 ---
 
 As [9to5Mac reported](https://9to5mac.com/2025/09/01/end-of-an-era-as-the-last-11-inch-macbook-air-is-now-officially-obsolete/), the 11-inch MacBook Air is officially an obsolete product.

@@ -1,7 +1,6 @@
 ---
 title: "Can we let Tim Cook do his job?"
 date: 2025-10-24
-layout: post
 ---
 
 Apple has once again [donated](https://9to5mac.com/2025/10/23/apple-on-short-list-of-donors-to-trumps-white-house-demolition-ballroom-project/) to the Trump administration.

@@ -4,7 +4,6 @@ date: 2024-06-21
 slug: posts/the-floggings-will-continue-until-morale-improves
 tags:
   - "Thoughts"
-layout: post
 ---
 
 > **flogging** · _noun_  

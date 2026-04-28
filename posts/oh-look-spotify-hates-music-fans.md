@@ -1,7 +1,6 @@
 ---
 title: "Oh look, Spotify hates music fans"
 date: 2025-12-23
-layout: post
 ---
 
 Sorry — it’s another post about how Spotify is a garbage company that doesn’t care about users or musicians.

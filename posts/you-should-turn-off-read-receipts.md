@@ -1,7 +1,6 @@
 ---
 title: "You should turn off read receipts"
 date: 2025-09-22
-layout: post
 ---
 
 I asked myself recently: how do read receipts in messaging apps actually serve me?

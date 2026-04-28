@@ -6,7 +6,6 @@ tags:
   - "Work"
   - "Remote Work"
   - "Thoughts"
-layout: post
 ---
 
 This question is surprisingly charged, and your response often places you in a specific camp. Either you’re a manager who wants your team in the office, or you’re an “individual contributor” who instinctively protects your right to work remotely.

@@ -1,7 +1,6 @@
 ---
 title: "Date pickers are the worst"
 date: 2025-06-06
-layout: post
 ---
 
 I hate date pickers.

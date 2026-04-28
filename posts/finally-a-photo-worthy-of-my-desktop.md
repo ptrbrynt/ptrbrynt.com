@@ -1,7 +1,6 @@
 ---
 title: "Finally — a photo worthy of my desktop"
 date: 2025-11-21
-layout: post
 ---
 
 I hit a milestone in my photography journey recently — I took a photo that I liked so much, I have set it as my desktop wallpaper.

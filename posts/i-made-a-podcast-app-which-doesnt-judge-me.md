@@ -1,7 +1,6 @@
 ---
 title: "I made a podcast app which doesn’t judge me"
 date: 2026-03-02
-layout: post
 ---
 
 I hate that this was necessary. But I’m very pleased with the outcome.

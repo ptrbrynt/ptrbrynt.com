@@ -1,7 +1,6 @@
 ---
 title: "Talk to your friends about music"
 date: 2025-12-04
-layout: post
 ---
 
 So Spotify Wrapped (and Apple Music Replay etc) is fun an all, but maybe we shouldn’t make this the only time in the whole year to share music with our friends?

@@ -1,7 +1,6 @@
 ---
 title: "I got married!"
 date: 2025-05-08
-layout: post
 ---
 
 This is just a short post to record that 23rd April 2025 was the most special and magical day of my life. I am lucky enough to be the husband of the most amazing person I know. Here are some photos from the wonderful [Chris Milner](https://instagram.com/chrismilnerphotography).

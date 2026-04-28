@@ -5,7 +5,6 @@ slug: posts/this-budgeting-app-changed-my-life
 tags:
   - "Tech"
   - "Apps"
-layout: post
 ---
 
 This isn’t a typical “this app changed my life” post. Most of those seem to be written within a few days of someone trying a new app for the first time.

@@ -5,7 +5,6 @@ slug: posts/how-to-actually-do-tdd-in-flutter
 tags:
   - "Flutter"
   - "Software Engineering"
-layout: post
 ---
 
 This post is the result of a months-long existential crisis about how to do testing in Flutter apps. There are _so many_ resources, tutorials, and opinions on how this should be done, but most of them give what is, in my opinion, bad advice.

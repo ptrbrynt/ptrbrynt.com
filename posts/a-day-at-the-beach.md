@@ -1,7 +1,6 @@
 ---
 title: "A day at the beach"
 date: 2025-07-28
-layout: post
 ---
 
 We had an absolutely lovely family day out at Sandsend Beach this weekend. We walked on the beach for a couple of hours, and had lunch at the truly excellent Fish Cottage — I had a rack of tacos.

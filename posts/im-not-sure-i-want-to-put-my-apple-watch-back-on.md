@@ -1,7 +1,6 @@
 ---
 title: "I’m not sure I want to put my Apple Watch back on"
 date: 2025-10-30
-layout: post
 ---
 
 > This post was edited with the help of an AI model. [I don’t do that anymore](https://ptrbrynt.com/ai), but I’ve added a notice to this post for transparancy.

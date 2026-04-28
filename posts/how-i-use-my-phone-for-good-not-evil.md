@@ -1,7 +1,6 @@
 ---
 title: "How I use my phone for good, not evil"
 date: 2026-04-27
-layout: post
 ---
 
 Phones get a lot of bad press these days, and many people feel addicted to them. But it seems pretty clear to me that the phones aren't the problem; it's social media.

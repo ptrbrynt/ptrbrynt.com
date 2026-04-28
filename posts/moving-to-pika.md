@@ -4,7 +4,6 @@ date: 2024-12-03
 slug: posts/moving-to-pika
 tags:
   - "Updates"
-layout: post
 ---
 
 I’ve just moved my blog from [Ghost](https://ghost.org)&nbsp;to [Pika](https://pika.page). I have no problem with Ghost; I think it’s an amazing platform with a great philosophy, and it’s taking the web in a good direction. I’m rooting for them.

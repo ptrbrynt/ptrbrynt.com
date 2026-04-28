@@ -1,7 +1,6 @@
 ---
 title: "Endel is magic"
 date: 2025-02-08
-layout: post
 ---
 
 A short post about a magical app called [Endel](https://endel.io/).

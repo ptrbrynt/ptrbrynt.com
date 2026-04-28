@@ -1,7 +1,6 @@
 ---
 title: "I had to stop watching The Big Bang Theory"
 date: 2025-10-17
-layout: post
 ---
 
 When I was growing up, _The Big Bang Theory_&nbsp;seemed like a pretty cool show. As a member of the&nbsp;“nerd” group at school, I was happy to finally seem some characters to whom I could relate.&nbsp;

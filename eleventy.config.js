@@ -32,4 +32,10 @@ module.exports = async function (eleventyConfig) {
   const { IdAttributePlugin } = await import("@11ty/eleventy");
 
   eleventyConfig.addPlugin(IdAttributePlugin);
+
+  eleventyConfig.addCollection("post", function (collectionsApi) {
+    return collectionsApi.getFilteredByGlob("posts/*.md").sort(function (a, b) {
+      return b.date - a.date;
+    });
+  });
 };

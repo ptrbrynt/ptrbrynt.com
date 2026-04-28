@@ -4,7 +4,6 @@ date: 2024-06-07
 slug: posts/wix-studio-is-terrible
 tags:
   - "Tech"
-layout: post
 ---
 
 I had a task this week: to make a website for a friend.
