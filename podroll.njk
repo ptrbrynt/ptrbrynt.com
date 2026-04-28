@@ -1,0 +1,100 @@
+---
+layout: page
+title: Podroll
+---
+
+<p>The shows I follow.</p>
+<div
+  id="grid"
+  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 16px; padding: 1rem 0;"></div>
+<script>
+  const podcasts = [
+    {
+      label: "A Better Computer",
+      url: "https://a-better-computer.simplecast.com/",
+      search: "A Better Computer"
+    },
+    {
+      label: "Best Laid Plans",
+      url: "https://theshubox.com/best-laid-plans-podcast",
+      search: "Best Laid Plans Sarah Hart-Unger"
+    },
+    {
+      label: "Decoder",
+      url: "https://www.theverge.com/decoder-podcast-with-nilay-patel",
+      search: "Decoder with Nilay Patel"
+    },
+    {
+      label: "No Such Thing As A Fish",
+      url: "https://www.nosuchthingasafish.com/",
+      search: "No Such Thing As A Fish"
+    }, {
+      label: "Off Menu",
+      url: "https://www.offmenupodcast.co.uk/",
+      search: "Off Menu Ed Gamble James Acaster"
+    }, {
+      label: "Pivot",
+      url: "https://nymag.com/pivot",
+      search: "Pivot Kara Swisher Scott Galloway"
+    }, {
+      label: "Soft Skills Engineering",
+      url: "https://softskills.audio/",
+      search: "Soft Skills Engineering podcast"
+    }, {
+      label: "The Rest Is Politics",
+      url: "https://www.therestispolitics.com/",
+      search: "The Rest Is Politics"
+    }, {
+      label: "The Rest Is Politics: Leading",
+      url: "https://www.therestispolitics.com/",
+      search: "The Rest Is Politics Leading"
+    }, {
+      label: "The Vergecast",
+      url: "https://www.theverge.com/the-vergecast",
+      search: "The Vergecast"
+    }, {
+      label: "Tune In",
+      url: "https://tunein.show/",
+      search: "Tune In barbershop BABS podcast"
+    }, {
+      label: "Version History",
+      url: "https://www.theverge.com/version-history-podcast",
+      search: "Version History Verge podcast"
+    }
+  ];
+  const grid = document.getElementById('grid');
+  podcasts.forEach((p, i) => {
+    const card = document.createElement('a');
+    card.href = p.url;
+    card.target = '_blank';
+    card.style.cssText = 'display:block; text-decoration:none;';
+    const wrap = document.createElement('div');
+    wrap.style.cssText = 'aspect-ratio:1; background:var(--color-background-secondary); border-radius:var(--border-radius-md); overflow:hidden; bo' +
+        'rder:0.5px solid var(--color-border-tertiary);';
+    const img = document.createElement('img');
+    img.id = 'img-' + i;
+    img.alt = p.label;
+    img.style.cssText = 'width:100%; height:100%; object-fit:cover; display:none; border-radius: 12px;';
+    const label = document.createElement('p');
+    label.style.cssText = 'font-size:12px; color:var(--color-text-secondary); margin:6px 0 0; text-align:center; line-height:1.3;';
+    label.textContent = p.label;
+    wrap.appendChild(img);
+    card.appendChild(wrap);
+    card.appendChild(label);
+    grid.appendChild(card);
+    fetch(
+    'https://itunes.apple.com/search?term=' + encodeURIComponent(p.search) + '&entity=podcast&limit=3&country=gb')
+      .then(
+      r => r.json())
+      .then(data => {
+        if (data.results && data.results.length > 0) {
+          const art = data.results[0].artworkUrl600 || data.results[0].artworkUrl100;
+          if (art) {
+            img.src = art;
+            img.style.display = 'block';
+          }
+        }
+      })
+      .catch(() => {});
+  });
+</script>

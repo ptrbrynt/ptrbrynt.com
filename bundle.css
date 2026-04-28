@@ -1,0 +1,50 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --pico-font-family: Lora, serif;
+  --pico-font-weight: 600;
+}
+
+body {
+  --pico-font-family: Inter, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+.container {
+  max-width: 700px;
+}
+
+main {
+  flex: 1;
+}
+
+.post-list {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+.post-list > li {
+  list-style: none;
+}
+
+.post-list > li > .post-title {
+  margin-block-start: 4rem;
+}
+
+.post-date {
+  color: var(--pico-muted-color);
+}
+
+/*
+Source - https://stackoverflow.com/a/10100209
+Posted by NoviceCoding, modified by community. See post 'Timeline' for change history
+Retrieved 2026-04-28, License - CC BY-SA 4.0
+*/
