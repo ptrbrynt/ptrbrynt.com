@@ -43,11 +43,6 @@ ul > li {
   list-style: disc;
 }
 
-.post-list {
-  list-style-type: none;
-  padding-inline-start: 0px;
-}
-
 .post-list > li {
   list-style: none;
 }
@@ -81,4 +76,14 @@ img {
   max-height: 40rem;
   object-fit: contain;
   margin: 24px;
+}
+
+.post-list-item {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.post-list {
+  list-style-type: none;
+  padding-inline-start: 0px;
 }
