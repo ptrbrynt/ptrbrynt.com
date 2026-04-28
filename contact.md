@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello
+title: Contact
 ---
 
 Here’s how I prefer to keep in touch:
