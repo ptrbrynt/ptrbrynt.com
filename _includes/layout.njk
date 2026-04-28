@@ -1,7 +1,5 @@
----js
-{
-    now: new Date()
-}
+---js 
+{ now: new Date() }
 ---
 
 <!doctype html>
@@ -9,13 +7,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ title }} | Peter Bryant</title>
+        <title>{{ title }}
+            | Peter Bryant</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
         <link rel="stylesheet" href="/bundle.css">
     </head>
     <body>
@@ -39,18 +37,30 @@
             <hr/>
         </header>
 
-        
-
         <main class="container">
             {{ content | safe }}
         </main>
-        
+
         <hr/>
-        
+
         <footer>
             <div class="container">
-                <p><strong><small>Made by a human, not AI</small></strong></p>
-                <p><small>Copyright © {{ now | date("yyyy") }} Peter Bryant</small></p>
+                <ul class="footer-links">
+                    {%- for pg in collections['footer-page'] -%}
+                        <li class="footer-link">
+                            <a {% if page.url == pg.url %} aria-current="page" {% endif %} href={{ pg.url }}>
+                                <small>{{ pg.data.title }}</small>
+                            </a>
+                        </li>
+                    {%- endfor -%}
+                </ul>
+
+                <p>
+                    <small>
+                        Copyright © Peter Bryant {{ now | date("yyyy") }}
+                    </small>
+                </p>
+
             </div>
         </footer>
     </body>

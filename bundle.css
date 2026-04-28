@@ -18,12 +18,29 @@ body {
   scrollbar-gutter: stable;
 }
 
+footer {
+  text-align: center;
+}
+
+.footer-links {
+  padding-inline-start: 0px;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-inline: 8px;
+}
+
 .container {
   max-width: 700px;
 }
 
 main {
   flex: 1;
+}
+
+ul > li {
+  list-style: disc;
 }
 
 .post-list {
@@ -43,8 +60,19 @@ main {
   color: var(--pico-muted-color);
 }
 
-/*
-Source - https://stackoverflow.com/a/10100209
-Posted by NoviceCoding, modified by community. See post 'Timeline' for change history
-Retrieved 2026-04-28, License - CC BY-SA 4.0
-*/
+[data-theme="light"],
+:root:not([data-theme="dark"]),
+:host:note([date-theme="dark"]) {
+  --pico-primary: var(--pico-color-slate-600);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]),
+  :host:not([data-theme]) {
+    --pico-primary: var(--pico-color-blue-600);
+  }
+}
+
+[data-theme="dark"] {
+  --pico-primary: var(--pico-color-blue-600);
+}

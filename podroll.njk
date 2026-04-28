@@ -13,18 +13,15 @@ title: Podroll
       label: "A Better Computer",
       url: "https://a-better-computer.simplecast.com/",
       search: "A Better Computer"
-    },
-    {
+    }, {
       label: "Best Laid Plans",
       url: "https://theshubox.com/best-laid-plans-podcast",
       search: "Best Laid Plans Sarah Hart-Unger"
-    },
-    {
+    }, {
       label: "Decoder",
       url: "https://www.theverge.com/decoder-podcast-with-nilay-patel",
       search: "Decoder with Nilay Patel"
-    },
-    {
+    }, {
       label: "No Such Thing As A Fish",
       url: "https://www.nosuchthingasafish.com/",
       search: "No Such Thing As A Fish"
@@ -69,8 +66,7 @@ title: Podroll
     card.target = '_blank';
     card.style.cssText = 'display:block; text-decoration:none;';
     const wrap = document.createElement('div');
-    wrap.style.cssText = 'aspect-ratio:1; background:var(--color-background-secondary); border-radius:var(--border-radius-md); overflow:hidden; bo' +
-        'rder:0.5px solid var(--color-border-tertiary);';
+    wrap.style.cssText = 'aspect-ratio:1; background:var(--color-background-secondary); border-radius:var(--border-radius-md); overflow:hidden; bo' + 'rder:0.5px solid var(--color-border-tertiary);';
     const img = document.createElement('img');
     img.id = 'img-' + i;
     img.alt = p.label;
@@ -82,13 +78,15 @@ title: Podroll
     card.appendChild(wrap);
     card.appendChild(label);
     grid.appendChild(card);
-    fetch(
-    'https://itunes.apple.com/search?term=' + encodeURIComponent(p.search) + '&entity=podcast&limit=3&country=gb')
-      .then(
-      r => r.json())
+    fetch('https://itunes.apple.com/search?term=' + encodeURIComponent(p.search) + '&entity=podcast&limit=3&country=gb')
+      .then(r => r.json())
       .then(data => {
         if (data.results && data.results.length > 0) {
-          const art = data.results[0].artworkUrl600 || data.results[0].artworkUrl100;
+          const art = data
+            .results[0]
+            .artworkUrl600 || data
+            .results[0]
+            .artworkUrl100;
           if (art) {
             img.src = art;
             img.style.display = 'block';
