@@ -1,10 +1,10 @@
 ---
-layout: post
-title: How I use my phone for good, not evil
+title: "How I use my phone for good, not evil"
 date: 2026-04-27
+layout: post
 ---
 
-Phones get a lot of bad press these days, and many people feel addicted to their phones. But it seems pretty clear to me that the phones aren't the problem; it's social media.
+Phones get a lot of bad press these days, and many people feel addicted to them. But it seems pretty clear to me that the phones aren't the problem; it's social media.
 
 It's perfectly possible to have a phone and use non-harmful software on it. For me, my phone is an extremely useful tool, as well as a source of entertainment and enrichment.
 
@@ -22,7 +22,7 @@ A bunch of exciting tools and services are cropping up around this (such as [Bub
 
 I struggle to manage my weight (thanks to Crohn's disease), but my current thesis is that if I arm myself with as much information as possible, I can attempt to make informed changes. That's where nutrition tracking comes in.
 
-I want to be very clear here — nutrition tracking is not for everyone, and I can absolutely see how it could lead to disordered eating or eating disorders (different things, a fact I recently learned from [Victoria Song](https://www.theverge.com/features/907359/cgms-optimizing-metabolism-dexcom-abbott-wearables-health-tech#:~:text=disordered%20eating%20or%20eating%20disorders) at _The Verge_). 
+I want to be very clear here —&nbsp;nutrition tracking is not for everyone, and I can absolutely see how it could lead to disordered eating or eating disorders (different things, a fact I recently learned from [Victoria Song](https://www.theverge.com/features/907359/cgms-optimizing-metabolism-dexcom-abbott-wearables-health-tech#:~:text=disordered%20eating%20or%20eating%20disorders) at _The Verge_).&nbsp;
 
 But deployed with the right mindset, I am starting to see the benefits of tracking my nutrition after only a few weeks. My goals are to eat more mindfully, to develop a better intuition of how the food I eat impacts my health, and to learn how I can make better choices.
 
@@ -40,22 +40,24 @@ On it's face, my screen time has increased considerably since I started doing th
 
 ## 4. Podcasts
 
-I thought I'd throw this one in here, partly as a shameless plug for my podcast app [Crest](https://crestpodcasts.com), but also as a plug for podcasting in general. If you're reading this, it's unlikely that you need me to sell you on how awesome podcasts are (or you've already decided they're not for you). If you want recommendations, my subscriptions are available on my [Podroll](https://ptrbrynt.com/podroll).
+I thought I'd throw this one in here, partly as a shameless plug for my podcast app [Crest](https://crestpodcasts.com), but also as a plug for podcasting in general. Although if you're reading this, it's unlikely that you need me to sell you on how awesome podcasts are (or you've already decided they're not for you). If you want recommendations, my subscriptions are available on my [Podroll](https://ptrbrynt.com/podroll).
 
 ## 5. Meditation
 
-One of my goals for the Spring is to develop a consistent meditation habit. Previously, I think I've been scuppered by the apps and services I've been using. I've tried all the usual suspects — Headspace, Apple Fitness+, Balance, (10 Percent) Happier etc — but I've found them all to be too burdensome. They're expensive, and they provide you with way too many options.
+One of my quests for the Spring is to develop a consistent meditation habit. Previously, I think I've been scuppered by the apps and services I've been using. I've tried all the usual suspects — Headspace, Apple Fitness+, Balance, (10 Percent) Happier etc. — but I've found them all to be too burdensome. They're expensive, and they provide you with way too many options.
 
 I just want to open the app and start a session without having to make any decisions. I don't want sponsored content or brand deals, and I'm not super interested in following a prescribed course.
 
 The app I've found recently which works great is [Medito](https://meditofoundation.org/). I like it for a few reasons:
 
 1. It's non-profit, ad-free, supported by donations
+
 2. You can open it, and tap a couple of buttons to start your daily session, without having to rifle through a massive catalog
+
 3. You can customise the duration of each session, select from 3 excellent speakers, and customise the background sounds
 
 Overall, it's just as solid as any of the usual suspects, and you don't have to pay a penny.
 
----
+* * *
 
-If you've read this, I'd love you to [email me](mailto:pb@ptrbrynt.com) with more "phone for good, not evil" ideas and suggestions.
+If you've read this, I'd love it if you [emailed me](mailto:pb@ptrbrynt.com) with more "phone for good, not evil" ideas and suggestions.

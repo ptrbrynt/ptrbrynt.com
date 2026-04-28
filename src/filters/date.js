@@ -9,7 +9,7 @@ const { DateTime } = require("luxon");
 // {{ date | friendlyDate('OPTIONAL FORMAT STRING') }}
 // List of supported tokens: https://moment.github.io/luxon/docs/manual/formatting.html#table-of-tokens
 
-module.exports = (dateObj, format = "LLLL dd, yyyy") => {
+module.exports = (dateObj, format = "LLLL d, yyyy") => {
   if (dateObj instanceof Date) {
     return DateTime.fromJSDate(dateObj, {
       zone: "utc",
