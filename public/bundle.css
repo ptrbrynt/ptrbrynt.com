@@ -36,7 +36,11 @@ blockquote p:last-child {
 
 .footer-link {
   display: inline-block;
-  margin-inline: 8px;
+  margin-inline-end: 8px;
+}
+
+.footer-links li:last-child {
+  margin-inline-end: 0px;
 }
 
 .container {
@@ -95,6 +99,19 @@ img {
 .post-list {
   list-style-type: none;
   padding-inline-start: 0px;
+}
+
+.post-footer-items {
+  padding-inline-start: 0px;
+}
+
+.post-footer-item {
+  margin-inline-end: 8px;
+  display: inline-block;
+}
+
+.post-footer-items li:last-child {
+  margin-inline-end: 0px;
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > a,

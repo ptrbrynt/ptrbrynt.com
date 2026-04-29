@@ -6,5 +6,18 @@ layout: layout
     <h1>{{title}}</h1>
 </hgroup>
 {{ content | safe }}
-<div class="bubbles-vote" data-url="{{site.url}}{{ page.url }}"></div>
-<script src="https://bubbles.town/vote.js" defer="defer"></script>
+
+<br>
+
+<ul class="post-footer-items">
+    <li class="post-footer-item">
+        <small>
+            <time class="post-date" datetime="{{ date }}">{{ date | date('d MMM, yyyy') }}</time>
+        </small>
+    </li>
+    <li class="post-footer-item">
+        <small>
+            <a href="mailto:pb@ptrbrynt.com?subject=Re: {{ title }}">Reply by email</a>
+        </small>
+    </li>
+</ul>
