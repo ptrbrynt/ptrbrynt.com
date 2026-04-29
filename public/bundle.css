@@ -1,15 +1,19 @@
+:root {
+  --pico-font-family-sans-serif: "DM Sans", sans-serif;
+  --pico-font-family-monospace: "DM Mono", monospace;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  --pico-font-family: Lora, serif;
-  --pico-font-weight: 600;
+  --pico-font-family: "DM Serif Display", serif;
+  --pico-font-weight: 500;
 }
 
 body {
-  --pico-font-family: Inter, sans-serif;
   min-height: 100vh;
   margin: 0;
   display: flex;
@@ -81,9 +85,27 @@ img {
 .post-list-item {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  padding-bottom: 8px;
 }
 
 .post-list {
   list-style-type: none;
   padding-inline-start: 0px;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a,
+div.code-toolbar > .toolbar > .toolbar-item > button,
+div.code-toolbar > .toolbar > .toolbar-item > span {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+  box-shadow: none;
+}
+
+code[class*="language-"] {
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family:
+    var(--pico-font-family-monospace), Consolas, Monaco, "Andale Mono",
+    "Ubuntu Mono", monospace;
 }

@@ -4,8 +4,8 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = async function (eleventyConfig) {
   eleventyConfig.addFilter("date", require("./src/filters/date.js"));
-  eleventyConfig.addPassthroughCopy("bundle.css");
-  eleventyConfig.addPassthroughCopy("robots.txt");
+
+  eleventyConfig.addPassthroughCopy({ public: "/" });
   eleventyConfig.addPassthroughCopy("images");
 
   eleventyConfig.addPlugin(feedPlugin, {

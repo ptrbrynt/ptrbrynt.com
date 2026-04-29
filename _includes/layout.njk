@@ -11,9 +11,27 @@
             | Peter Bryant</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+
+        <link rel="stylesheet" href="/prism.css">
+        <script src="/prism.js"></script>
+
+        <script>
+            // Configure normalize-whitespace before Prism runs
+            Prism
+                .plugins
+                .NormalizeWhitespace
+                .setDefaults({
+                    'remove-trailing': true, 'remove-indent': true, 'left-trim': true, 'right-trim': true, 'tabs-to-spaces': 2 // Dart convention — tightens indentation visually
+                });
+        </script>
         <link rel="stylesheet" href="/bundle.css">
     </head>
     <body>
