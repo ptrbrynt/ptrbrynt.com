@@ -1,6 +1,5 @@
 ---
 layout: page
-override:tags: footer-page
 title: Feeds
 ---
 
