@@ -1,9 +1,8 @@
 ---
 title: "I’m not sure I want to put my Apple Watch back on"
 date: 2025-10-30
+layout: ai-post
 ---
-
-> This post was edited with the help of an AI model. [I don’t do that anymore](https://ptrbrynt.com/ai), but I’ve added a notice to this post for transparancy.
 
 Since upgrading to the Apple Watch Series 10, I’ve got a serious problem: contact dermatitis.
 
@@ -11,7 +10,7 @@ Never happened with my Watch Ultra. Nor with the Series 5 before it. But this on
 
 My most recent break has been the longest yet: over a week. That’s when I started thinking — I can’t keep going like this without trying to fix it. I began hunting for protective film covers for the sensor array under the Watch. I was seconds from hitting “order”. Then I paused. And asked myself: do I _actually_ want to go back to wearing a smartwatch?
 
-* * *
+---
 
 ### Ten years of feature creep
 
@@ -23,7 +22,7 @@ In 2013, the appeal of smartwatches was simple: notifications, music control, te
 
 That’s convenient, except somewhere along the way, I stopped asking whether I _wanted_ an internet-connected device strapped to my wrist _all the time_. I always thought I loved the cellular independence of the Apple Watch as a way to disconnect from my phone — but looking back, that might be the crux of the issue: escape becomes impossible when you’ve got the internet on your body.
 
-* * *
+---
 
 ### Apple Watch ⌚️ or Apple Watch 👀
 
@@ -37,7 +36,7 @@ I’m healthy enough. Sleep’s usually fine. If it’s not, I already know why 
 
 Without a coach interpreting the numbers, most of these stats are meaningless. If you’re broadly healthy, the watch becomes: “We’ll keep an eye on you” — which is okay… except that feedback without coaching just feels like judgement.
 
-* * *
+---
 
 ### What I _actually_ miss
 
@@ -51,7 +50,7 @@ Going a week without the Watch has surfaced the few things I genuinely miss:
 
 All fixable. A dumb watch, a £4 kitchen timer, and a good old alarm clock cover this ground. So I’m going back to basics for now.
 
-* * *
+---
 
 ### Conclusion
 

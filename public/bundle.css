@@ -26,6 +26,10 @@ footer {
   text-align: center;
 }
 
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 .footer-links {
   padding-inline-start: 0px;
 }
@@ -105,7 +109,5 @@ code[class*="language-"] {
   font-size: 0.8rem;
   white-space: pre-wrap;
   word-break: break-word;
-  font-family:
-    var(--pico-font-family-monospace), Consolas, Monaco, "Andale Mono",
-    "Ubuntu Mono", monospace;
+  font-family: var(--pico-font-family-monospace);
 }

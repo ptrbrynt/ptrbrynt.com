@@ -16,7 +16,7 @@ ADHD is a deeply personal experience, so some of these ideas might not work for 
 
 ## Capture everything
 
-Getting Stuff Done with ADHD can be really hard, and having the right tools to support you is essential. I've tried all sorts of systems, from [bullet journalling](https://www.ptrbrynt.com/back-to-bullet-journals/) to automated AI scheduling.
+Getting Stuff Done with ADHD can be really hard, and having the right tools to support you is essential. I've tried all sorts of systems, from bullet journalling to automated AI scheduling.
 
 The most important feature of any productivity system for ADHDers, though, is simplicity. It’s inevitable that you will drop it at some point, and it should be easy and frictionless to pick it back up again.
 
@@ -44,7 +44,7 @@ The other advantage of using timers is that it reminds me to take frequent break
 
 ## Stay active
 
-It has taken me 29 years of living to finally accept the benefits of regular exercise, particularly for an ADHD brain. I have recently started [running](https://www.ptrbrynt.com/just-run/) and swimming, and I really notice the difference if I don’t exercise in the morning. I feel less energetic, more bored, and less focused.
+It has taken me 29 years of living to finally accept the benefits of regular exercise, particularly for an ADHD brain. I have recently started running and swimming, and I really notice the difference if I don’t exercise in the morning. I feel less energetic, more bored, and less focused.
 
 ## Sleep
 

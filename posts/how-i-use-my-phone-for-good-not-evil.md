@@ -39,7 +39,7 @@ On it's face, my screen time has increased considerably since I started doing th
 
 ## 4. Podcasts
 
-I thought I'd throw this one in here, partly as a shameless plug for my podcast app [Crest](https://crestpodcasts.com), but also as a plug for podcasting in general. Although if you're reading this, it's unlikely that you need me to sell you on how awesome podcasts are (or you've already decided they're not for you). If you want recommendations, my subscriptions are available on my [Podroll](https://ptrbrynt.com/podroll).
+I thought I'd throw this one in here, partly as a shameless plug for my podcast app [Crest](https://crestpodcasts.com), but also as a plug for podcasting in general. Although if you're reading this, it's unlikely that you need me to sell you on how awesome podcasts are (or you've already decided they're not for you). If you want recommendations, my subscriptions are available on my [Podroll](/podroll).
 
 ## 5. Meditation
 
@@ -57,6 +57,6 @@ The app I've found recently which works great is [Medito](https://meditofoundati
 
 Overall, it's just as solid as any of the usual suspects, and you don't have to pay a penny.
 
-* * *
+---
 
 If you've read this, I'd love it if you [emailed me](mailto:pb@ptrbrynt.com) with more "phone for good, not evil" ideas and suggestions.
