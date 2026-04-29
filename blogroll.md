@@ -1,6 +1,7 @@
 ---
 title: "Blogroll"
 layout: page
+override:tags: footer-page
 ---
 
 A collection of blogs and sites I follow and recommend.

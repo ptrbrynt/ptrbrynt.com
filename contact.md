@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Contact
-override:tags: footer-page
 ---
 
 Here’s how I prefer to keep in touch:
