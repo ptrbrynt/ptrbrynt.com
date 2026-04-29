@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npx eleventy && wrangler deploy",
+    "preview": "npx eleventy && wrangler dev"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +18,8 @@
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "luxon": "^3.7.2"
+  },
+  "devDependencies": {
+    "wrangler": "^4.86.0"
   }
 }
