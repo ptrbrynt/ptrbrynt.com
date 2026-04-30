@@ -1,0 +1,10 @@
+when:
+  - event: [ "push" ]
+    branch: [ "main" ]
+engine: "nixery"
+dependencies:
+  nixpkgs:
+    - nodejs
+steps:
+  - name: "Build and deploy"
+    command: "npm run deploy"
