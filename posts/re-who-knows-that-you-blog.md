@@ -1,5 +1,5 @@
 ---
-title: “Re: Who knows that you blog?”
+title: "Re: Who knows that you blog?"
 date: 2026-04-30
 ---
 
@@ -17,4 +17,4 @@ My “real world” life is, thankfully, much happier than it was when I was 12.
 
 I don’t fully understand the psychology behind all this, but it seems like my experience is not unique amongst bloggers. I’m utterly fascinated by it all.
 
-[1]:	https://forkingmad.blog/who-knows-that-you-blog/
+[1]: https://forkingmad.blog/who-knows-that-you-blog/
