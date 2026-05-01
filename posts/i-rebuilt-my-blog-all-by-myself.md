@@ -15,7 +15,7 @@ The website is built using a static site generator called [Eleventy (11ty)](http
 
 Continuing the lightweight theme, I used Pico CSS, which provides a very minimal set of components and styles to get you started. I've customised it with a few layout choices of my own. Look at me writing CSS!
 
-This was my first time rolling my own RSS feed (thanks to [Brandon Rozek](brandonrozek.com) for a great tip on how to get RSS readers to easily discover my feed using a `link` tag). Everything seems to have worked okay so far!
+This was my first time rolling my own RSS feed (thanks to [Brandon Rozek](https://brandonrozek.com) for a great tip on how to get RSS readers to easily discover my feed using a `link` tag). Everything seems to have worked okay so far!
 
 If you discover any issues or bugs, please do [email me](mailto:pb@ptrbrynt.com).
 
