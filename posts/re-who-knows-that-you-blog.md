@@ -1,6 +1,5 @@
 ---
 title: "Re: Who knows that you blog?"
-date: 2026-04-30
 ---
 
 [This post][1] has sparked an interesting discussion online, and it happens to be something I think about a lot.
