@@ -22,6 +22,7 @@ _site
 !.dev.vars.example
 !.env.example
 
-# Ulysses
+# Writing Apps
 
 **/.Ulysses*
+**/.nota
