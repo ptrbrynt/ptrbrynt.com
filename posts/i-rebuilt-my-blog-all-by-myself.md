@@ -1,5 +1,6 @@
 ---
 title: "I rebuilt my blog all by myself"
+date: "2026-05-01T10:10+01:00"
 ---
 
 I'm officially a self-built blogger.
