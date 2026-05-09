@@ -1,5 +1,5 @@
 ---
-date: “2026-05-09T08:34+01:00”
+date: 2026-05-09T08:34+01:00
 title: “What are your Top Three?”
 ---
 
