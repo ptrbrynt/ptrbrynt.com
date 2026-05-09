@@ -1,6 +1,6 @@
 ---
 date: 2026-05-09T08:34+01:00
-title: “What are your Top Three?”
+title: What are your Top Three?
 ---
 
 I just read [Eating: It’s Nice](https://www.vzqk50.com/blog/eating-its-nice/) by Apis Necros, and there’s an excellent quote here:
