@@ -2,8 +2,8 @@ backend:
   name: github
   repo: ptrbrynt/ptrbrynt.com
   branch: main
-  base_url: https://ptrbrynt.com
-  auth_endpoint: /api/auth
+  base_url: https://decap-oauth.pb-1ac.workers.dev
+  auth_endpoint: /auth
 
 media_folder: "images"
 public_folder: "public"
