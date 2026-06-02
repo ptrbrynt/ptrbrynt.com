@@ -1,13 +1,12 @@
 ---
-date: 2026-05-14T17:05+01:00
 title: Behold the recursive number to Roman numeral converter
+date: 2026-05-14T17:05+01:00
 ---
-
 I just read [this post](https://sava.rocks/blog/behold-the-number-to-roman-numeral-converter/) on how to convert a number to a Roman numeral. The post outlines an iterative method, which works and is very fun.
 
 It got me thinking though. I've always had a strange interest in recursive algorithms. There is something very satisfying to me about writing a recursive method that works.
 
-If you don't know or need a reminder, a _recursive_ algorithm is one which _calls itself_. A famous example is the Fibonacci sequence, which computes the value of the next number in the sequence by adding up the previous two. If you know the sequence starts with a pair of 1s, then it's pretty easy to write a recursive function which can compute the \_n_th value in the sequence:
+If you don't know or need a reminder, a *recursive* algorithm is one which *calls itself*. A famous example is the Fibonacci sequence, which computes the value of the next number in the sequence by adding up the previous two. If you know the sequence starts with a pair of 1s, then it's pretty easy to write a recursive function which can compute the *n*th value in the sequence:
 
 ```dart
 int fib(int n) => switch (n) {
@@ -59,7 +58,7 @@ The code has two parts:
 
 **The extension** adds an `asRomanNumerals` property to every integer in Dart, so you can call something like `2024.asRomanNumerals` directly. When called, it walks through the map from largest value to smallest, and as soon as it finds a value that fits into the current number, it takes that Roman symbol and calls itself recursively on whatever is left over. For example, 14 is greater than 10, so it takes "X" and recurses on 4 — which matches "IV" — giving "XIV". This repeats until the number has been fully accounted for and nothing remains.
 
----
+- - -
 
 I built this as a little command-line application — source code is [here](https://github.com/ptrbrynt/roman_numerals).
 
