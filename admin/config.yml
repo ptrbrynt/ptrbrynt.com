@@ -17,4 +17,36 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "richtext" }
+  - name: "exercises"
+    label: "Exercise Logs"
+    folder: "exercise"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - {
+          label: "Type",
+          name: "type",
+          widget: "select",
+          options: ["Outdoor Run", "Resistance Training", "Indoor Run"],
+        }
+      - { label: "Duration", name: "duration", widget: "string" }
+      - { label: "Distance", name: "distance", widget: "string" }
+      - { label: "Elevation", name: "elevation", widget: "string" }
+      - { label: "Cadence", name: "cadence", widget: "string" }
+      - { label: "Calories", name: "calories", widget: "string" }
+      - {
+          label: "Heart Rate (Avg)",
+          name: "heart_rate_avg",
+          widget: "number",
+          value_type: "int",
+        }
+      - {
+          label: "Heart Rate (Max)",
+          name: "heart_rate_max",
+          widget: "number",
+          value_type: "int",
+        }
+      - { label: "Notes", name: "notes", widget: "richtext" }
