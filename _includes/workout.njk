@@ -16,7 +16,21 @@ layout: layout
     {% if distance %}
         <div class="stat">
             <span class="stat-label">Distance</span>
-            <span class="stat-value">{{ distance }}</span>
+            <span class="stat-value">{{ distance }} km</span>
+        </div>
+    {% endif %}
+
+    {% if elevation %}
+        <div class="stat">
+            <span class="stat-label">Elevation Gain</span>
+            <span class="stat-value">{{ elevation }} m</span>
+        </div>
+    {% endif %}
+
+    {% if cadence %}
+        <div class="stat">
+            <span class="stat-label">Cadence</span>
+            <span class="stat-value">{{ cadence }} spm</span>
         </div>
     {% endif %}
 

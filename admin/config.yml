@@ -33,10 +33,25 @@ collections:
           options: ["Outdoor Run", "Resistance Training", "Indoor Run"],
         }
       - { label: "Duration", name: "duration", widget: "string" }
-      - { label: "Distance", name: "distance", widget: "string" }
-      - { label: "Elevation", name: "elevation", widget: "string" }
-      - { label: "Cadence", name: "cadence", widget: "string" }
-      - { label: "Calories", name: "calories", widget: "string" }
+      - {
+          label: "Distance (km)",
+          name: "distance",
+          widget: "number",
+          value_type: "float",
+        }
+      - { label: "Elevation Gain (m)", name: "elevation", widget: "string" }
+      - {
+          label: "Cadence (spm)",
+          name: "cadence",
+          widget: "number",
+          value_type: "float",
+        }
+      - {
+          label: "Active Calories (kcal)",
+          name: "calories",
+          widget: "number",
+          value_type: "int",
+        }
       - {
           label: "Heart Rate (Avg)",
           name: "heart_rate_avg",
