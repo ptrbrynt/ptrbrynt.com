@@ -1,0 +1,48 @@
+---
+layout: layout
+---
+
+<header class="workout-header">
+    <h1>{{ title }}</h1>
+</header>
+
+<section class="workout-stats">
+
+    <div class="stat">
+        <span class="stat-label">Duration</span>
+        <span class="stat-value">{{ duration }}</span>
+    </div>
+
+    {% if distance %}
+        <div class="stat">
+            <span class="stat-label">Distance</span>
+            <span class="stat-value">{{ distance }}</span>
+        </div>
+    {% endif %}
+
+    <div class="stat">
+        <span class="stat-label">Active Calories</span>
+        <span class="stat-value">{{ calories }} kcal</span>
+    </div>
+
+    {% if heart_rate_avg %}
+        <div class="stat">
+            <span class="stat-label">Avg Heart Rate</span>
+            <span class="stat-value">{{ heart_rate_avg }} bpm</span>
+        </div>
+    {% endif %}
+
+    {% if heart_rate_max %}
+        <div class="stat">
+            <span class="stat-label">Max Heart Rate</span>
+            <span class="stat-value">{{ heart_rate_max }} bpm</span>
+        </div>
+    {% endif %}
+
+</section>
+
+{% if notes %}
+    <section class="workout-notes">
+        {{ notes | safe }}
+    </section>
+{% endif %}

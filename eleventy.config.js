@@ -38,4 +38,11 @@ module.exports = async function (eleventyConfig) {
       return a.date - b.date;
     });
   });
+  eleventyConfig.addCollection("exercise", function (collectionsApi) {
+    return collectionsApi
+      .getFilteredByGlob("exercise/*.md")
+      .sort(function (a, b) {
+        return a.date - b.date;
+      });
+  });
 };
