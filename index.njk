@@ -3,20 +3,20 @@ layout: layout
 title: Posts
 ---
 
-<p>Hi, I'm Peter. I write here about productivity, technology, personal development, and making things.</p>
+<p id="strapline">Hi, I'm Peter. I write here about productivity, technology, personal development, and making things.</p>
 
-<div>Writing</div>
+<hr/>
 
 {%- for year, posts in collections.post | groupby('data.year') | dictsort | reverse -%}
-    <section>
-        <h2>{{ year }}</h2>
-        <ul >
+    <section class="posts-year">
+        <h3>{{ year }}</h3>
+        <ul class="post-list">
             {%- for post in posts | reverse -%}
-                <li >
-                    <a href="{{ post.url }}">
-                        <span >{{ post.data.title }}</span>
-                        <time >{{ post.date | date('d LLL') }}</time>
-                    </a>
+                <li class="post-list-item">
+
+                    <a class="post-list-title" href="{{ post.url }}">{{ post.data.title }}</a>
+                    <time class="post-list-date">{{ post.date | date('d LLL') }}</time>
+
                 </li>
             {%- endfor -%}
         </ul>

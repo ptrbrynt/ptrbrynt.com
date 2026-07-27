@@ -2,25 +2,10 @@
 layout: layout
 ---
 
-<a href="/" >&larr; All posts</a>
-
 <hgroup>
     <h1>{{title}}</h1>
-    <p><time datetime="{{ page.date }}">{{ page.date | date('fff') }}</time></p>
+    <p class="post-page-date">
+        <time datetime="{{ page.date }}">{{ page.date | date('fff') }}</time>
+    </p>
 </hgroup>
 {{ content | safe }}
-
-<br>
-
-<ul >
-    <li >
-        <small>
-            <time >{{ page.date | date('fff') }}</time>
-        </small>
-    </li>
-    <li >
-        <small>
-            <a href="mailto:pb@ptrbrynt.com?subject=Re: {{ title }}">Reply by email &rarr;</a>
-        </small>
-    </li>
-</ul>

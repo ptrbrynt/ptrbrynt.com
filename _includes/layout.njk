@@ -32,10 +32,10 @@
     </head>
     <body>
         <header>
-            <nav>
-                <a {% if page.url == '/' %} aria-current="page" {% endif %} >
-                    <h1>Peter Bryant</h1>
-                </a>
+            <a {% if page.url == '/' %} aria-current="page" {% endif %} href="/">
+                <h1>Peter Bryant</h1>
+            </a>
+            <nav aria-label="Main navigation">
                 <ul>
                     {%- for pg in collections.page -%}
                         <li>
@@ -44,20 +44,19 @@
                     {%- endfor -%}
                 </ul>
             </nav>
-            <hr/>
         </header>
 
-        <main >
+        <main>
             {{ content | safe }}
         </main>
 
-        <hr/>
+        <br>
 
-        <footer >
-            <div >
-                <ul >
+        <footer>
+            <nav aria-label="Footer navigation">
+                <ul>
                     {%- for pg in collections['footer-page'] -%}
-                        <li >
+                        <li>
                             <a {% if page.url == pg.url %} aria-current="page" {% endif %} href={{ pg.url }}>
                                 <small>{{ pg.data.title }}</small>
                             </a>
@@ -65,13 +64,12 @@
                     {%- endfor -%}
                 </ul>
 
-                <p>
-                    <small>
+            </nav>
+            <p>
+                <small>
                         Copyright © Peter Bryant {{ now | date("yyyy") }}
-                    </small>
-                </p>
-
-            </div>
+                </small>
+            </p>
         </footer>
     </body>
 </html>

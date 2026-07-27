@@ -1,3 +1,176 @@
+:root {
+  --sans-font: "Instrument Sans", sans-serif;
+  --serif-font: "Newsreader", ui-serif, serif;
+  --mono-font: monospace;
+  --navy-blue: #19233a;
+  --background: #f7f6f3;
+  --subtle: #a0aabd;
+  --link: #5b6a86;
+  --text: #23324f;
+  --quote: rgb(185, 198, 221);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #14192a; /* darker than your navy-blue, so navy-blue can sit "above" it */
+    --navy-blue: #eef1f8; /* was your dark accent/text color — flip it to near-white */
+    --subtle: #6b7690; /* darkened/desaturated so it stays subtle against a dark bg */
+    --link: #8ea0c7; /* lightened so it's readable on dark, keeps the same hue */
+    --text: #eef1f8;
+  }
+}
+
+body {
+  font-family: var(--sans-font);
+  background-color: var(--background);
+  max-width: 640px;
+  margin-inline: auto;
+  padding: 16px;
+  color: var(--text);
+}
+
+blockquote {
+  margin: 32px 0px;
+  padding: 4px 0px 4px 22px;
+  border-left: 2px solid var(--quote);
+  font-family: Newsreader, Georgia, serif;
+  font-size: 20px;
+  line-height: 1.55;
+  color: var(--quote);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--serif-font);
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+header h1 {
+  font-family: var(--serif-font);
+  font-size: x-large;
+  font-weight: 500;
+  font-size: 21px;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 16px 0 0 0;
+  padding: 0;
+}
+
+nav ul a {
+  font-size: 14.5px;
+}
+
+.posts-year {
+  display: flex;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.posts-year h3 {
+  font-size: 15px;
+  color: #8c99b0;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.post-list {
+  list-style: none;
+  margin: 4px 0 0px 0;
+  padding: 0;
+}
+
+.post-list-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0px;
+  gap: 8px;
+}
+
+.post-list-title {
+  font-family: var(--serif-font);
+  font-size: 18px;
+  line-height: 1.5;
+  text-wrap: pretty;
+  flex: 1 1 auto;
+}
+
+.post-list-date {
+  font-size: 12.5px;
+  color: var(--subtle);
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+  margin-top: 4px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.posts-year,
+.post-list {
+  width: 100%;
+}
+
+.post-page-date {
+  font-size: 13px;
+  color: var(--subtle);
+}
+
+footer {
+  margin-top: 16px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--subtle);
+}
+
+#strapline {
+  font-family: var(--serif-font);
+  font-size: 27px;
+  line-height: 1.45;
+}
+
 div.code-toolbar > .toolbar > .toolbar-item > a,
 div.code-toolbar > .toolbar > .toolbar-item > button,
 div.code-toolbar > .toolbar > .toolbar-item > span {
@@ -10,5 +183,5 @@ code[class*="language-"] {
   font-size: 0.8rem;
   white-space: pre-wrap;
   word-break: break-word;
-  /* font-family: var(--pico-font-family-monospace); */
+  font-family: var(--mono-font);
 }
