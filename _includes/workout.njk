@@ -2,61 +2,61 @@
 layout: layout
 ---
 
-<header class="workout-header">
+<header >
     <h1>{{ title }}</h1>
 </header>
 
-<section class="workout-stats">
+<section >
 
-    <div class="stat">
-        <span class="stat-label">Duration</span>
-        <span class="stat-value">{{ duration }}</span>
+    <div >
+        <span >Duration</span>
+        <span >{{ duration }}</span>
     </div>
 
     {% if distance %}
-        <div class="stat">
-            <span class="stat-label">Distance</span>
-            <span class="stat-value">{{ distance }} km</span>
+        <div >
+            <span >Distance</span>
+            <span >{{ distance }} km</span>
         </div>
     {% endif %}
 
     {% if elevation %}
-        <div class="stat">
-            <span class="stat-label">Elevation Gain</span>
-            <span class="stat-value">{{ elevation }} m</span>
+        <div >
+            <span >Elevation Gain</span>
+            <span >{{ elevation }} m</span>
         </div>
     {% endif %}
 
     {% if cadence %}
-        <div class="stat">
-            <span class="stat-label">Cadence</span>
-            <span class="stat-value">{{ cadence }} spm</span>
+        <div >
+            <span >Cadence</span>
+            <span >{{ cadence }} spm</span>
         </div>
     {% endif %}
 
-    <div class="stat">
-        <span class="stat-label">Active Calories</span>
-        <span class="stat-value">{{ calories }} kcal</span>
+    <div >
+        <span >Active Calories</span>
+        <span >{{ calories }} kcal</span>
     </div>
 
     {% if heart_rate_avg %}
-        <div class="stat">
-            <span class="stat-label">Avg Heart Rate</span>
-            <span class="stat-value">{{ heart_rate_avg }} bpm</span>
+        <div >
+            <span >Avg Heart Rate</span>
+            <span >{{ heart_rate_avg }} bpm</span>
         </div>
     {% endif %}
 
     {% if heart_rate_max %}
-        <div class="stat">
-            <span class="stat-label">Max Heart Rate</span>
-            <span class="stat-value">{{ heart_rate_max }} bpm</span>
+        <div >
+            <span >Max Heart Rate</span>
+            <span >{{ heart_rate_max }} bpm</span>
         </div>
     {% endif %}
 
 </section>
 
 {% if notes %}
-    <section class="workout-notes">
+    <section >
         {{ notes | safe }}
     </section>
 {% endif %}

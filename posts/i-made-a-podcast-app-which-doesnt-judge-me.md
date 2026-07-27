@@ -85,7 +85,7 @@ And, of course, you can manually manage your queue in a few ways:
 
 - Mark as Played
 
-- Release —&nbsp;remove from the queue without marking as played<sup id="fnref:1"><a class="footnote-ref" data-id="7fb759a6-1501-4eed-99ce-5aaa3832f7a9" href="#fn:1">1</a></sup>
+- Release —&nbsp;remove from the queue without marking as played<sup id="fnref:1"><a >1</a></sup>
 
 - Save — prevent the app from automatically removing
 
@@ -95,7 +95,7 @@ Episodes of subscribed shows can also be manually added to the queue, but this w
 
 All your data is stored on your phone.
 
-That’s pretty much the entire privacy policy. The tradeoff is, of course, that you don’t get cross-device sync.<sup id="fnref:2"><a class="footnote-ref" data-id="3dd52f31-4e39-4355-a48c-9ad0461849bb" href="#fn:2">2</a></sup> This was a hard decision but, for me at least, the pros outweight the cons. I do 95% of my podcast listening time on my phone, so moving the final 5% (which was on my Mac while working) won’t be too difficult. That’s what AirPlay and wireless headphones are for, I guess.
+That’s pretty much the entire privacy policy. The tradeoff is, of course, that you don’t get cross-device sync.<sup id="fnref:2"><a >2</a></sup> This was a hard decision but, for me at least, the pros outweight the cons. I do 95% of my podcast listening time on my phone, so moving the final 5% (which was on my Mac while working) won’t be too difficult. That’s what AirPlay and wireless headphones are for, I guess.
 
 There _is_ a small caveat, which is that I wanted product analytics. So when you start the app, I ask if you want to opt in. If so, I collect anonymous usage. If not, I’ll never bother you about it again (unless you want to go into Settings and turn it on).
 

@@ -12,8 +12,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-
         <link rel="stylesheet" href="/prism.css">
         <script src="/prism.js"></script>
 
@@ -34,14 +32,10 @@
     </head>
     <body>
         <header>
-            <nav class="container">
-                <ul>
-                    <li>
-                        <a {% if page.url == '/' %} aria-current="page" {% endif %} class="site-title" href="/">
-                            Peter Bryant
-                        </a>
-                    </li>
-                </ul>
+            <nav>
+                <a {% if page.url == '/' %} aria-current="page" {% endif %} >
+                    <h1>Peter Bryant</h1>
+                </a>
                 <ul>
                     {%- for pg in collections.page -%}
                         <li>
@@ -53,17 +47,17 @@
             <hr/>
         </header>
 
-        <main class="container">
+        <main >
             {{ content | safe }}
         </main>
 
         <hr/>
 
-        <footer class="site-footer">
-            <div class="container">
-                <ul class="footer-links">
+        <footer >
+            <div >
+                <ul >
                     {%- for pg in collections['footer-page'] -%}
-                        <li class="footer-link">
+                        <li >
                             <a {% if page.url == pg.url %} aria-current="page" {% endif %} href={{ pg.url }}>
                                 <small>{{ pg.data.title }}</small>
                             </a>

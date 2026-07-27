@@ -3,19 +3,19 @@ layout: layout
 title: Posts
 ---
 
-<p class="intro">Hi, I'm Peter. I write here about productivity, technology, personal development, and making things.</p>
+<p>Hi, I'm Peter. I write here about productivity, technology, personal development, and making things.</p>
 
-<div class="eyebrow">Writing</div>
+<div>Writing</div>
 
 {%- for year, posts in collections.post | groupby('data.year') | dictsort | reverse -%}
-    <section class="year-group">
-        <h2 class="year-label">{{ year }}</h2>
-        <ul class="post-list">
+    <section>
+        <h2>{{ year }}</h2>
+        <ul >
             {%- for post in posts | reverse -%}
-                <li class="post-row">
+                <li >
                     <a href="{{ post.url }}">
-                        <span class="title">{{ post.data.title }}</span>
-                        <time class="date" datetime="{{ post.date }}">{{ post.date | date('d LLL') }}</time>
+                        <span >{{ post.data.title }}</span>
+                        <time >{{ post.date | date('d LLL') }}</time>
                     </a>
                 </li>
             {%- endfor -%}

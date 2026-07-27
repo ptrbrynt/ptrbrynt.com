@@ -27,7 +27,6 @@ ptrbrynt.com is hosted on CloudFlare Workers.
 ## Tech Stack
 
 - [11ty](https://11ty.dev)
-- [pico](https://picocss.com)
 - [prism.js](https://prismjs.com)
 - [GitHub](https://github.com/ptrbrynt/)
 
