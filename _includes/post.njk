@@ -2,8 +2,11 @@
 layout: layout
 ---
 
+<a href="/" class="back-link">&larr; All posts</a>
+
 <hgroup>
     <h1>{{title}}</h1>
+    <p><time datetime="{{ page.date }}">{{ page.date | date('fff') }}</time></p>
 </hgroup>
 {{ content | safe }}
 
@@ -17,7 +20,7 @@ layout: layout
     </li>
     <li class="post-footer-item">
         <small>
-            <a href="mailto:pb@ptrbrynt.com?subject=Re: {{ title }}">Reply by email</a>
+            <a href="mailto:pb@ptrbrynt.com?subject=Re: {{ title }}">Reply by email &rarr;</a>
         </small>
     </li>
 </ul>

@@ -3,22 +3,22 @@ layout: layout
 title: Posts
 ---
 
-<p>
-    <strong>Hi, I'm Peter 👋</strong>
-</p>
-<p>
-    Here, I like to share my thoughts on productivity, technology, personal development, and creativity.
-</p>
-<h1>Posts</h1>
+<p class="intro">Hi, I'm Peter. I write here about productivity, technology, personal development, and making things.</p>
+
+<div class="eyebrow">Writing</div>
 
 {%- for year, posts in collections.post | groupby('data.year') | dictsort | reverse -%}
-    <h2>{{ year }}</h2>
-    {%- for post in posts | reverse -%}
+    <section class="year-group">
+        <h2 class="year-label">{{ year }}</h2>
         <ul class="post-list">
-            <li class="post-list-item">
-                <time class="post-date" datetime="{{ post.date }}">{{ post.date | date('DD') }}</time>
-                <a href={{ post.url }}>{{ post.data.title }}</a>
-            </li>
+            {%- for post in posts | reverse -%}
+                <li class="post-row">
+                    <a href="{{ post.url }}">
+                        <span class="title">{{ post.data.title }}</span>
+                        <time class="date" datetime="{{ post.date }}">{{ post.date | date('d LLL') }}</time>
+                    </a>
+                </li>
+            {%- endfor -%}
         </ul>
-    {%- endfor -%}
+    </section>
 {%- endfor -%}

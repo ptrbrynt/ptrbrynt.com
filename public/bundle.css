@@ -1,6 +1,8 @@
 :root {
-  --pico-font-family-sans-serif: "DM Sans", sans-serif;
-  --pico-font-family-monospace: "DM Mono", monospace;
+  --pico-font-family-sans-serif: "Instrument Sans", system-ui, sans-serif;
+  --pico-font-family-serif: "Newsreader", Georgia, serif;
+  --pico-font-family: var(--pico-font-family-sans-serif);
+  --pico-line-height: 1.8;
 }
 
 h1,
@@ -9,8 +11,101 @@ h3,
 h4,
 h5,
 h6 {
-  --pico-font-family: "DM Serif Display", serif;
+  font-family: var(--pico-font-family-serif);
   --pico-font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  letter-spacing: -0.02em;
+}
+
+/* Navy/pastel theme — only applied in light mode, so dark-mode visitors
+   keep Pico's own dark palette instead of a light theme forced on them. */
+[data-theme="light"] {
+  --pico-background-color: #f7f6f2;
+  --pico-color: #16233c;
+  --pico-h1-color: #16233c;
+  --pico-h2-color: #16233c;
+  --pico-h3-color: #16233c;
+  --pico-h4-color: #16233c;
+  --pico-h5-color: #16233c;
+  --pico-h6-color: #16233c;
+
+  --pico-muted-color: #5b6a86;
+  --pico-muted-border-color: #ddd8cc;
+
+  --pico-primary: #16233c;
+  --pico-primary-background: #16233c;
+  --pico-primary-hover: #3d5480;
+  --pico-primary-hover-background: #3d5480;
+  --pico-primary-underline: #b9c6dd;
+  --pico-primary-hover-underline: #3d5480;
+  --pico-primary-focus: rgba(61, 84, 128, 0.25);
+  --pico-primary-inverse: #f7f6f2;
+
+  --pico-card-background-color: #fbfaf7;
+  --pico-card-border-color: #ddd8cc;
+  --pico-card-sectioning-background-color: #f0eee7;
+
+  --pico-form-element-background-color: #fbfaf7;
+  --pico-form-element-border-color: #ddd8cc;
+  --pico-form-element-focus-color: #3d5480;
+
+  --pico-blockquote-border-color: #b9c6dd;
+
+  --pico-code-background-color: #eceade;
+  --pico-code-color: #3d5480;
+
+  --theme-faint: #8c99b0;
+  --theme-fainter: #a0aabd;
+  --theme-hover-background: #eceade;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --pico-background-color: #f7f6f2;
+    --pico-color: #16233c;
+    --pico-h1-color: #16233c;
+    --pico-h2-color: #16233c;
+    --pico-h3-color: #16233c;
+    --pico-h4-color: #16233c;
+    --pico-h5-color: #16233c;
+    --pico-h6-color: #16233c;
+
+    --pico-muted-color: #5b6a86;
+    --pico-muted-border-color: #ddd8cc;
+
+    --pico-primary: #16233c;
+    --pico-primary-background: #16233c;
+    --pico-primary-hover: #3d5480;
+    --pico-primary-hover-background: #3d5480;
+    --pico-primary-underline: #b9c6dd;
+    --pico-primary-hover-underline: #3d5480;
+    --pico-primary-focus: rgba(61, 84, 128, 0.25);
+    --pico-primary-inverse: #f7f6f2;
+
+    --pico-card-background-color: #fbfaf7;
+    --pico-card-border-color: #ddd8cc;
+    --pico-card-sectioning-background-color: #f0eee7;
+
+    --pico-form-element-background-color: #fbfaf7;
+    --pico-form-element-border-color: #ddd8cc;
+    --pico-form-element-focus-color: #3d5480;
+
+    --pico-blockquote-border-color: #b9c6dd;
+
+    --pico-code-background-color: #eceade;
+    --pico-code-color: #3d5480;
+
+    --theme-faint: #8c99b0;
+    --theme-fainter: #a0aabd;
+    --theme-hover-background: #eceade;
+  }
+}
+
+::selection {
+  background: var(--pico-primary-focus);
 }
 
 body {
@@ -20,47 +115,181 @@ body {
   flex-direction: column;
   overflow-y: scroll;
   scrollbar-gutter: stable;
-}
-
-.site-footer {
-  text-align: center;
-}
-
-blockquote p:last-child {
-  margin-bottom: 0;
-}
-
-.footer-links {
-  padding-inline-start: 0px;
-}
-
-.footer-link {
-  display: inline-block;
-  margin-inline-end: 8px;
-}
-
-.footer-links li:last-child {
-  margin-inline-end: 0px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
-  max-width: 700px;
+  max-width: 640px;
 }
 
 main {
   flex: 1;
 }
 
+a {
+  text-decoration-color: var(--pico-primary-underline);
+  text-underline-offset: 3px;
+}
+a:hover {
+  text-decoration-color: var(--pico-primary-hover-underline);
+}
+
+header nav a,
+.site-footer a {
+  color: var(--pico-muted-color);
+  text-decoration: none;
+}
+header nav a:hover,
+header nav a[aria-current="page"],
+.site-footer a:hover,
+.site-footer a[aria-current="page"] {
+  color: var(--pico-color);
+}
+
+.site-title {
+  font-family: var(--pico-font-family-serif);
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: var(--pico-color) !important;
+}
+
+blockquote {
+  font-family: var(--pico-font-family-serif);
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: var(--pico-primary-hover);
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.site-footer {
+  padding-top: 8px;
+}
+
+.footer-links {
+  padding-inline-start: 0px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+}
+
+.footer-link {
+  list-style: none;
+  margin-inline-end: 0;
+}
+
 ul > li {
   list-style: disc;
 }
 
+/* Homepage intro */
+.intro {
+  font-family: var(--pico-font-family-serif);
+  font-size: 1.55rem;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.1rem;
+}
+
+.intro-sub {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--pico-muted-color);
+  margin: 0;
+  max-width: 30em;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 3rem 0 2.5rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--theme-faint);
+}
+.eyebrow::before,
+.eyebrow::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: var(--pico-muted-border-color);
+}
+
+/* Homepage writing list, grouped by year */
+.year-group {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 0 20px;
+  margin-bottom: 2.5rem;
+  align-items: start;
+}
+
+.year-label {
+  margin: 7px 0 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--theme-faint);
+  letter-spacing: 0.02em;
+  position: sticky;
+  top: 24px;
+}
+
+.post-list {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 .post-list > li {
   list-style: none;
 }
 
-.post-list > li > .post-title {
-  margin-block-start: 4rem;
+.post-row a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 16px;
+  align-items: baseline;
+  text-decoration: none;
+  padding: 7px 10px 7px 0;
+  border-radius: 4px;
+  color: var(--pico-color);
+}
+.post-row a:hover {
+  background: var(--theme-hover-background);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.post-row .title {
+  font-family: var(--pico-font-family-serif);
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+.post-row .date {
+  font-size: 0.8rem;
+  color: var(--theme-fainter);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Post articles */
+.back-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--theme-fainter);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+.back-link:hover {
+  color: var(--pico-color);
 }
 
 .post-date {
@@ -68,21 +297,18 @@ ul > li {
   margin-right: 8px;
 }
 
-[data-theme="light"],
-:root:not([data-theme="dark"]),
-:host:note([date-theme="dark"]) {
-  --pico-primary: var(--pico-color-slate-600);
+.post-footer-items {
+  padding-inline-start: 0px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
 }
-
-@media only screen and (prefers-color-scheme: dark) {
-  :root:not([data-theme]),
-  :host:not([data-theme]) {
-    --pico-primary: var(--pico-color-blue-600);
-  }
-}
-
-[data-theme="dark"] {
-  --pico-primary: var(--pico-color-blue-600);
+.post-footer-item {
+  list-style: none;
+  margin-inline-end: 0;
+  display: inline-block;
 }
 
 img {
@@ -92,30 +318,6 @@ img {
   border-radius: 8px;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.post-list-item {
-  display: grid;
-  grid-template-columns: 3fr 5fr;
-  padding-bottom: 8px;
-}
-
-.post-list {
-  list-style-type: none;
-  padding-inline-start: 0px;
-}
-
-.post-footer-items {
-  padding-inline-start: 0px;
-}
-
-.post-footer-item {
-  margin-inline-end: 8px;
-  display: inline-block;
-}
-
-.post-footer-items li:last-child {
-  margin-inline-end: 0px;
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > a,
