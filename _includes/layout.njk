@@ -34,7 +34,7 @@
     </head>
     <body>
         <header>
-            <nav class="container">
+            <nav class="container site-nav">
                 <ul>
                     <li>
                         <a {% if page.url == '/' %} aria-current="page" {% endif %} class="site-title" href="/">
@@ -42,7 +42,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul>
+                <ul class="nav-links">
                     {%- for pg in collections.page -%}
                         <li>
                             <a {% if page.url == pg.url %} aria-current="page" {% endif %} href={{ pg.url }}>{{ pg.data.title }}</a>
