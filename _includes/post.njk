@@ -5,7 +5,12 @@ layout: layout
 <hgroup>
     <h1>{{title}}</h1>
     <p class="post-page-date">
-        <time datetime="{{ page.date }}">{{ page.date | date('fff') }}</time>
+        <time datetime="{{ page.date }}">{{ page.date | date('d MMMM yyyy') }}</time>
     </p>
 </hgroup>
+
 {{ content | safe }}
+
+<small>
+    <a href="mailto:pb@ptrbrynt.com">Reply by email →</a>
+</small>

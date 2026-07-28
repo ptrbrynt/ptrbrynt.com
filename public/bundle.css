@@ -1,12 +1,13 @@
 :root {
   --sans-font: "Instrument Sans", sans-serif;
   --serif-font: "Newsreader", ui-serif, serif;
-  --mono-font: monospace;
+  --mono-font: "Spline Sans Mono", monospace;
   --navy-blue: #19233a;
   --background: #f7f6f3;
   --subtle: #a0aabd;
   --link: #5b6a86;
   --text: #23324f;
+  --text-light: #5b6a86;
   --quote: rgb(185, 198, 221);
 }
 
@@ -17,6 +18,7 @@
     --subtle: #6b7690; /* darkened/desaturated so it stays subtle against a dark bg */
     --link: #8ea0c7; /* lightened so it's readable on dark, keeps the same hue */
     --text: #eef1f8;
+    --text-light: #eef1f8ce;
   }
 }
 
@@ -25,7 +27,7 @@ body {
   background-color: var(--background);
   max-width: 640px;
   margin-inline: auto;
-  padding: 16px;
+  padding: 0 16px;
   color: var(--text);
 }
 
@@ -70,6 +72,11 @@ header {
   justify-content: space-between;
   align-items: center;
   row-gap: 1rem;
+  padding-top: 8px;
+}
+
+strong {
+  font-weight: 500;
 }
 
 header h1 {
@@ -166,9 +173,41 @@ hr {
 }
 
 #strapline {
+  margin: 48px 0;
+}
+
+#strapline p {
   font-family: var(--serif-font);
-  font-size: 27px;
+  font-size: 26px;
   line-height: 1.45;
+}
+
+#strapline small {
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--text-light);
+}
+
+/* Stick footer to bottom */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-block: 0;
+}
+
+main {
+  flex: 1 0 auto; /* grows to fill leftover space, pushing footer down */
+}
+
+footer {
+  flex-shrink: 0;
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > a,

@@ -10,7 +10,7 @@ public_folder: "public"
 
 collections:
   - name: "posts"
-    label: "Blog Posts"
+    label: "Blog Post"
     folder: "posts"
     create: true
     slug: "{{slug}}"
@@ -18,50 +18,3 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "richtext" }
-  - name: "exercises"
-    label: "Exercise Logs"
-    folder: "exercise"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - {
-          label: "Type",
-          name: "type",
-          widget: "select",
-          options: ["Outdoor Run", "Resistance Training", "Indoor Run"],
-        }
-      - { label: "Duration", name: "duration", widget: "string" }
-      - {
-          label: "Distance (km)",
-          name: "distance",
-          widget: "number",
-          value_type: "float",
-        }
-      - { label: "Elevation Gain (m)", name: "elevation", widget: "string" }
-      - {
-          label: "Cadence (spm)",
-          name: "cadence",
-          widget: "number",
-          value_type: "float",
-        }
-      - {
-          label: "Active Calories (kcal)",
-          name: "calories",
-          widget: "number",
-          value_type: "int",
-        }
-      - {
-          label: "Heart Rate (Avg)",
-          name: "heart_rate_avg",
-          widget: "number",
-          value_type: "int",
-        }
-      - {
-          label: "Heart Rate (Max)",
-          name: "heart_rate_max",
-          widget: "number",
-          value_type: "int",
-        }
-      - { label: "Notes", name: "notes", widget: "richtext" }
